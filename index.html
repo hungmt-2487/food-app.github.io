@@ -5,29 +5,31 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="./styles.css">
+  <link href="https://fonts.cdnfonts.com/css/sf-pro-display" rel="stylesheet">
   <title>Document</title>
 </head>
 <body>
   <header class="header">
     <div class="logo">
-      <img src="https://cdn1.iconfinder.com/data/icons/google-s-logo/150/Google_Icons-09-512.png" alt="" class="logo-image" height="48px" width="48px">
+      <img src="https://cdn1.iconfinder.com/data/icons/google-s-logo/150/Google_Icons-09-512.png" alt="" class="logo-image">
       <div class="logo-name">
         Logo Name
       </div>
     </div>
     <div class="navbar">
       <div class="language">
-        <img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Flag_of_the_United_Kingdom_%281-2%29.svg" height="16px" width="24px" alt="">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Flag_of_the_United_Kingdom_%281-2%29.svg"alt="">
       </div>
       <div class="sign-in">
-        <img src="" alt="">
+        <img src="https://cdn-icons-png.flaticon.com/128/456/456283.png" alt="" class="sign-in__image">
         Sign in
       </div>
-      <div class="search">
-        <input type="text" placeholder="Search item" class="search-input">
-      </div>
+      <input type="text" placeholder="Search item" class="search-input">
       <div class="cart">
-        <img src="https://png.pngtree.com/element_our/20190531/ourmid/pngtree-shopping-cart-convenient-icon-image_1287807.jpg" class="cart-logo" height="48px" width="48px" alt="">
+        <div class="cart-logo" data-after-text="10">
+          <img src="https://cdn.onlinewebfonts.com/svg/img_232393.png" alt="">
+          <span class="badge">1</span>
+        </div>
         Cart
       </div>
     </div>
@@ -36,49 +38,455 @@
     <div class="menu-bar">
       <div class="category">
         <div class="big-category">
-
+          <div class="big-category__item big-category__active">
+              Lunch menu
+          </div>
+          <div class="big-category__item">
+            Dinner menu
+          </div>
+          <div class="big-category__item">
+            Holiday menu
+          </div>
+          <div class="big-category__item">
+            Special VIP
+          </div>
         </div>
         <div class="small-category">
-
+          <div class="small-category__item small-category__active">
+            <img src="https://icons.veryicon.com/png/o/business/shopping-mall-linear-icon-exercise/080-popular.png" alt="" class="category-image">
+            <div class="category-name">
+              Popular
+            </div>
+          </div>
+          <div class="small-category__item">
+            <img src="https://cdn-icons-png.flaticon.com/512/1413/1413594.png" alt="" class="category-image">
+            <div class="category-name">
+              Pizza
+            </div>
+          </div>
+          <div class="small-category__item">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS8zk16aVJguhr717ghRO5HXzQJ68snBd0v-A&usqp=CAU" alt="" class="category-image">
+            <div class="category-name">
+              Burger
+            </div>
+          </div>
+          <div class="small-category__item">
+            <img src="https://cdn-icons-png.flaticon.com/512/821/821074.png" alt="" class="category-image">
+            <div class="category-name">
+              Chicken
+            </div>
+          </div>
+          <div class="small-category__item">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQdj-YxxrH9WsUgN0I-caqjMgKr8wj1VsqS0g&usqp=CAU" alt="" class="category-image">
+            <div class="category-name">
+              Rice
+            </div>
+          </div>
+          <div class="small-category__item">
+            <img src="https://icons-for-free.com/iconfiles/png/512/glass+juice+soda+icon-1320086088178381000.png" alt="" class="category-image">
+            <div class="category-name">
+              Soft drink
+            </div>
+          </div>
+          <div class="small-category__item">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSIpnxoMk8oDL8O1fn3DCxsRaDKr-phjUEF5A&usqp=CAU" alt="" class="category-image">
+            <div class="category-name">
+              Alcohol drink
+            </div>
+          </div>
+          <div class="small-category__item">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSjrrNjEc26kpCgbtb61PI6FfLGmS8GIa0Bcg&usqp=CAU" alt="" class="category-image">
+            <div class="category-name">
+              Cake
+            </div>
+          </div>
+            <div class="small-category__item">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSjrrNjEc26kpCgbtb61PI6FfLGmS8GIa0Bcg&usqp=CAU" alt="" class="category-image">
+            <div class="category-name">
+              Cake
+            </div>
+          </div>
         </div>
       </div>
       <div class="category-list">
         <div class="list-title">
-
+          <span>Popular</span>
         </div>
         <div class="product-list">
-          <div class="product">
-
+          <div class="product-item">
+            <div class="product-item__image">
+              <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR2sgmidb6lypUhdsWPgXbAH4ys8ZIuZ2KdLQ&usqp=CAU" alt="">
+              <div class="product-item__tag tag-new">
+                New
+              </div>
+            </div>
+            <div class="product-item__info">
+              <div class="item-head">
+                <div class="product-name">
+                  Pizza New York Cheesesteak
+                </div>
+                <div class="product-favorite">
+                  <img src="https://image.pngaaa.com/683/479683-middle.png" alt="" height="13px" width="13px">
+                  320
+                </div>
+              </div>
+              <div class="product-price">
+                <div class="sale-price">1000 Kr</div>
+                <div class="real-price">1200 Kr</div>
+              </div>
+              <div class="add-to-cart">
+                +
+              </div>
+            </div>
           </div>
-          <div class="product">
-
+          <div class="product-item">
+            <div class="product-item__image">
+              <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR2sgmidb6lypUhdsWPgXbAH4ys8ZIuZ2KdLQ&usqp=CAU" alt="">
+              <div class="product-item__tag tag-new">
+                New
+              </div>
+            </div>
+            <div class="product-item__info">
+              <div class="item-head">
+                <div class="product-name">
+                  Pizza New York Cheesesteak
+                </div>
+                <div class="product-favorite">
+                  <img src="https://image.pngaaa.com/683/479683-middle.png" alt="" height="13px" width="13px">
+                  320
+                </div>
+              </div>
+              <div class="product-price">
+                <div class="sale-price">1000 Kr</div>
+                <div class="real-price">1200 Kr</div>
+              </div>
+              <div class="add-to-cart">
+                +
+              </div>
+            </div>
+          </div>
+          <div class="product-item">
+            <div class="product-item__image">
+              <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR2sgmidb6lypUhdsWPgXbAH4ys8ZIuZ2KdLQ&usqp=CAU" alt="">
+              <div class="product-item__tag tag-popular">
+                Popular
+              </div>
+            </div>
+            <div class="product-item__info">
+              <div class="item-head">
+                <div class="product-name">
+                  Pizza New York Cheesesteak
+                </div>
+                <div class="product-favorite">
+                  <img src="https://image.pngaaa.com/683/479683-middle.png" alt="" height="13px" width="13px">
+                  320
+                </div>
+              </div>
+              <div class="product-price">
+                <div class="sale-price">1000 Kr</div>
+                <div class="real-price">1200 Kr</div>
+              </div>
+              <div class="add-to-cart">
+                +
+              </div>
+            </div>
+          </div>
+          <div class="product-item">
+            <div class="product-item__image">
+              <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR2sgmidb6lypUhdsWPgXbAH4ys8ZIuZ2KdLQ&usqp=CAU" alt="">
+            </div>
+            <div class="product-item__info">
+              <div class="item-head">
+                <div class="product-name">
+                  Pizza New York Cheesesteak
+                </div>
+                <div class="product-favorite">
+                  <img src="https://image.pngaaa.com/683/479683-middle.png" alt="" height="13px" width="13px">
+                  320
+                </div>
+              </div>
+              <div class="product-price">
+                <div class="sale-price">1000 Kr</div>
+                <div class="real-price">1200 Kr</div>
+              </div>
+              <div class="add-to-cart">
+                +
+              </div>
+            </div>
+          </div>
+         <div class="product-item">
+            <div class="product-item__image">
+              <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR2sgmidb6lypUhdsWPgXbAH4ys8ZIuZ2KdLQ&usqp=CAU" alt="">
+              <div class="product-item__tag tag-new">
+                New
+              </div>
+            </div>
+            <div class="product-item__info">
+              <div class="item-head">
+                <div class="product-name">
+                  Pizza New York Cheesesteak
+                </div>
+                <div class="product-favorite">
+                  <img src="https://image.pngaaa.com/683/479683-middle.png" alt="" height="13px" width="13px">
+                  320
+                </div>
+              </div>
+              <div class="product-price">
+                <div class="sale-price">1000 Kr</div>
+                <div class="real-price">1200 Kr</div>
+              </div>
+              <div class="add-to-cart">
+                +
+              </div>
+            </div>
+          </div>
+          <div class="product-item">
+            <div class="product-item__image">
+              <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR2sgmidb6lypUhdsWPgXbAH4ys8ZIuZ2KdLQ&usqp=CAU" alt="">
+              <div class="product-item__tag tag-new">
+                New
+              </div>
+            </div>
+            <div class="product-item__info">
+              <div class="item-head">
+                <div class="product-name">
+                  Pizza New York Cheesesteak
+                </div>
+                <div class="product-favorite">
+                  <img src="https://image.pngaaa.com/683/479683-middle.png" alt="" height="13px" width="13px">
+                  320
+                </div>
+              </div>
+              <div class="product-price">
+                <div class="sale-price">1000 Kr</div>
+                <div class="real-price">1200 Kr</div>
+              </div>
+              <div class="add-to-cart">
+                +
+              </div>
+            </div>
+          </div>
+          <div class="product-item">
+            <div class="product-item__image">
+              <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR2sgmidb6lypUhdsWPgXbAH4ys8ZIuZ2KdLQ&usqp=CAU" alt="">
+              <div class="product-item__tag tag-new">
+                New
+              </div>
+            </div>
+            <div class="product-item__info">
+              <div class="item-head">
+                <div class="product-name">
+                  Pizza New York Cheesesteak
+                </div>
+                <div class="product-favorite">
+                  <img src="https://image.pngaaa.com/683/479683-middle.png" alt="" height="13px" width="13px">
+                  320
+                </div>
+              </div>
+              <div class="product-price">
+                <div class="sale-price">1000 Kr</div>
+                <div class="real-price">1200 Kr</div>
+              </div>
+              <div class="add-to-cart">
+                +
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="category-list">
+        <div class="list-title">
+          <span>Pizza</span>
+        </div>
+        <div class="product-list">
+          <div class="product-item">
+            <div class="product-item__image">
+              <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR2sgmidb6lypUhdsWPgXbAH4ys8ZIuZ2KdLQ&usqp=CAU" alt="">
+              <div class="product-item__tag tag-popular">
+                Popular
+              </div>
+            </div>
+            <div class="product-item__info">
+              <div class="item-head">
+                <div class="product-name">
+                  Pizza New York Cheesesteak
+                </div>
+                <div class="product-favorite">
+                  <img src="https://image.pngaaa.com/683/479683-middle.png" alt="" height="13px" width="13px">
+                  320
+                </div>
+              </div>
+              <div class="product-price">
+                <div class="sale-price">1000 Kr</div>
+                <div class="real-price">1200 Kr</div>
+              </div>
+              <div class="add-to-cart">
+                +
+              </div>
+            </div>
+          </div>
+          <div class="product-item">
+            <div class="product-item__image">
+              <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR2sgmidb6lypUhdsWPgXbAH4ys8ZIuZ2KdLQ&usqp=CAU" alt="">
+            </div>
+            <div class="product-item__info">
+              <div class="item-head">
+                <div class="product-name">
+                  Pizza New York Cheesesteak
+                </div>
+                <div class="product-favorite">
+                  <img src="https://image.pngaaa.com/683/479683-middle.png" alt="" height="13px" width="13px">
+                  320
+                </div>
+              </div>
+              <div class="product-price">
+                <div class="sale-price">1000 Kr</div>
+                <div class="real-price">1200 Kr</div>
+              </div>
+              <div class="add-to-cart">
+                +
+              </div>
+            </div>
+          </div>
+         <div class="product-item">
+            <div class="product-item__image">
+              <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR2sgmidb6lypUhdsWPgXbAH4ys8ZIuZ2KdLQ&usqp=CAU" alt="">
+              <div class="product-item__tag tag-new">
+                New
+              </div>
+            </div>
+            <div class="product-item__info">
+              <div class="item-head">
+                <div class="product-name">
+                  Pizza New York Cheesesteak
+                </div>
+                <div class="product-favorite">
+                  <img src="https://image.pngaaa.com/683/479683-middle.png" alt="" height="13px" width="13px">
+                  320
+                </div>
+              </div>
+              <div class="product-price">
+                <div class="sale-price">1000 Kr</div>
+                <div class="real-price">1200 Kr</div>
+              </div>
+              <div class="add-to-cart">
+                +
+              </div>
+            </div>
+          </div>
+          <div class="product-item">
+            <div class="product-item__image">
+              <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR2sgmidb6lypUhdsWPgXbAH4ys8ZIuZ2KdLQ&usqp=CAU" alt="">
+              <div class="product-item__tag tag-new">
+                New
+              </div>
+            </div>
+            <div class="product-item__info">
+              <div class="item-head">
+                <div class="product-name">
+                  Pizza New York Cheesesteak
+                </div>
+                <div class="product-favorite">
+                  <img src="https://image.pngaaa.com/683/479683-middle.png" alt="" height="13px" width="13px">
+                  320
+                </div>
+              </div>
+              <div class="product-price">
+                <div class="sale-price">1000 Kr</div>
+                <div class="real-price">1200 Kr</div>
+              </div>
+              <div class="add-to-cart">
+                +
+              </div>
+            </div>
           </div>
         </div>
       </div>
     </div>
-    <div class="cart">
-      <div class="cart-header"> 
-
-      </div>
-      <div class="cart-item">
-
-      </div>
-      <div class="voucher">
-        <div class="title">
-
+    <div class="cart-info">
+      <div class="cart-main">
+        <div class="cart-header">
+          <div class="your-cart">
+            Your cart
+          </div>
+          <div class="cart-action">
+            <div class="reset">
+              Reset order
+            </div>
+            <div class="hide">
+              Hide
+            </div>
+          </div>
         </div>
-        <div class="add">
-
+        <div class="cart-list">
+          <div class="item-number">
+            1 item
+          </div>
+          <div class="cart-item">
+            <div class="item-info">
+              <div class="item-image">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR2sgmidb6lypUhdsWPgXbAH4ys8ZIuZ2KdLQ&usqp=CAU" alt="">
+              </div>
+              <div class="product-info">
+                <div class="item-name">PIZZA SAIGON MANIA</div>
+                <div class="item-action">
+                  <span class="decrease">-</span>
+                  <span class="amount">1</span>
+                  <span class="increase">+</span>
+                </div>
+                <div class="price-item">170 Kr</div>
+              </div>
+            </div>
+            <div class="item-memo">
+              Handtossed crust, 7 inch, sausage, double cheese
+            </div>
+          </div>
         </div>
-      </div>
-      <div class="tips">
-
+        <div class="voucher">
+          <div class="title">
+            Voucher, Gift card
+          </div>
+          <div class="add-voucher">
+            Add code
+          </div>
+        </div>
+        <div class="tips">
+          <div class="title">Tips</div>
+          <div class="tips-list">
+            <div class="tip-item tip-item__active">
+              0 Kr
+            </div>
+            <div class="tip-item">
+              10 Kr
+            </div>
+            <div class="tip-item">
+              20 Kr
+            </div>
+            <div class="tip-item">
+              30 Kr
+            </div>
+          </div>
+        </div>
       </div>
       <div class="pricing-info">
-
-      </div>
-      <div class="checkout">
-
+        <div class="subtotal">
+          <label class="label">Subtotal <span class="label__memo">(included VAT)</span></label>
+          <p class="value">170 Kr</p>
+        </div>
+        <div class="discount">
+          <label class="label">Discount</label>
+          <p class="value">0 Kr</p>
+        </div>
+        <div class="total">
+          <label class="label">Total</label>
+          <div class="total-loyalty">
+            <div class="points">+170 points</div>
+            <p class="value">170 Kr</p>
+          </div>
+        </div>
+        <div class="checkout">
+          Checkout
+        </div>
       </div>
     </div>
   </div>
