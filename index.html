@@ -4,8 +4,10 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="./styles.css">
+  <link rel="stylesheet" href="./styles/styles.css">
   <link href="https://fonts.cdnfonts.com/css/sf-pro-display" rel="stylesheet">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="./js/index.js"></script>
   <title>Document</title>
 </head>
 <body>
@@ -106,6 +108,8 @@
               Cake
             </div>
           </div>
+          <!-- <a class="prev">❮</a> -->
+          <button class="next">❯</button> 
         </div>
       </div>
       <div class="category-list">
@@ -171,29 +175,6 @@
               <div class="product-item__tag tag-popular">
                 Popular
               </div>
-            </div>
-            <div class="product-item__info">
-              <div class="item-head">
-                <div class="product-name">
-                  Pizza New York Cheesesteak
-                </div>
-                <div class="product-favorite">
-                  <img src="https://image.pngaaa.com/683/479683-middle.png" alt="" height="13px" width="13px">
-                  320
-                </div>
-              </div>
-              <div class="product-price">
-                <div class="sale-price">1000 Kr</div>
-                <div class="real-price">1200 Kr</div>
-              </div>
-              <div class="add-to-cart">
-                +
-              </div>
-            </div>
-          </div>
-          <div class="product-item">
-            <div class="product-item__image">
-              <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR2sgmidb6lypUhdsWPgXbAH4ys8ZIuZ2KdLQ&usqp=CAU" alt="">
             </div>
             <div class="product-item__info">
               <div class="item-head">
@@ -302,9 +283,6 @@
           <div class="product-item">
             <div class="product-item__image">
               <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR2sgmidb6lypUhdsWPgXbAH4ys8ZIuZ2KdLQ&usqp=CAU" alt="">
-              <div class="product-item__tag tag-popular">
-                Popular
-              </div>
             </div>
             <div class="product-item__info">
               <div class="item-head">
@@ -427,7 +405,7 @@
               <div class="item-image">
                 <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR2sgmidb6lypUhdsWPgXbAH4ys8ZIuZ2KdLQ&usqp=CAU" alt="">
               </div>
-              <div class="product-info">
+              <!-- <div class="product-info"> -->
                 <div class="item-name">PIZZA SAIGON MANIA</div>
                 <div class="item-action">
                   <span class="decrease">-</span>
@@ -436,7 +414,7 @@
                 </div>
                 <div class="price-item">170 Kr</div>
               </div>
-            </div>
+            <!-- </div> -->
             <div class="item-memo">
               Handtossed crust, 7 inch, sausage, double cheese
             </div>
@@ -490,5 +468,29 @@
       </div>
     </div>
   </div>
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+      const content = document.querySelector('.small-category');
+      if (content.scrollWidth > content.clientWidth) {
+        const rightBtn = document.querySelector('.next');
+        rightBtn.style.display="block"
+      }
+    });
+
+    window.addEventListener("scroll", function(event) { 
+
+      var scroll_y = this.scrollY; 
+      var scroll_x = this.scrollX; 
+      console.log("🚀 ~ file: index.html:484 ~ window.addEventListener ~ scroll_x:", scroll_x)
+    }); 
+
+    const rightBtn = document.querySelector('.next');
+    rightBtn.addEventListener("click", function(event) {
+      const conent = document.querySelector('.small-category');
+      conent.scrollLeft += 300;
+      event.preventDefault();
+    });
+  </script>
 </body>
 </html>
+  
